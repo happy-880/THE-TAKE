@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Offering | THE TAKE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="THE TAKE Logo" class="site-logo">
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="offerings.html">Offerings</a>
+                <a href="journey.html">Journey</a>
+                <a href="manager-dashboard.html" class="active">Manager</a>
+                <a href="member-dashboard.html">Member</a>
+                <a href="about.html">About Us</a>
+            </nav>
+
+            <a href="member-dashboard.html" class="profile-link">
+                <img src="images/profile.png" alt="Profile">
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <a href="manager-dashboard.html">Manager</a>
+            <span>›</span>
+            <span>Add New Offering</span>
+        </div>
+
+        <div class="manager-layout">
+
+            <aside class="manager-sidebar">
+                <h2>Manager Dashboard</h2>
+
+                <a href="manager-dashboard.html" class="sidebar-link">
+                    <span>▦</span> Manage Offerings
+                </a>
+
+                <a href="manage-instructors.html" class="sidebar-link">
+                    <span>♙</span> Manage Instructors
+                </a>
+            </aside>
+
+            <section class="manager-content">
+
+                <div class="form-heading">
+                    <h1>Add New Offering</h1>
+                    <p>Create a new workshop or activity for THE TAKE.</p>
+                </div>
+
+                <form action="#" method="post" class="offering-form" id="offering-form" novalidate> 
+                    <div class="form-group">
+                        <label for="offering-name">Offering Name</label>
+                        <input type="text" id="offering-name" name="offering-name"
+                               placeholder="Enter offering name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="offering-image">Offering Image</label>
+                        <input type="file" id="offering-image" name="offering-image" accept="image/*"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="offering-price">Price / Registration Fee (SAR)</label>
+                        <input type="number" id="offering-price" name="offering-price" min="0"
+                               placeholder="Enter price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="offering-description">Description</label>
+                        <textarea id="offering-description" name="offering-description"
+                                  rows="4" placeholder="Enter offering description"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="manager-dashboard.html" class="btn btn-secondary">Cancel</a>
+                        <button type="submit" class="btn">Add Offering</button>
+                    </div>
+
+                </form>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-social">
+            <div class="footer-heading">Social Media</div>
+            <a href="#">Instagram: @TheTake.sa</a>
+            <a href="#">X: @TheTake.sa</a>
+        </div>
+        <div class="footer-brand">
+            <img src="images/logo.jpg" alt="THE TAKE Logo">
+            <p>© 2026 THE TAKE. All rights reserved.</p>
+        </div>
+        <div class="footer-contact">
+            <div class="footer-heading">Contact Us</div>
+            <a href="tel:+966500000000">
+                Phone number: +966 50 000 0000
+            </a>
+            <a href="mailto:info@thetake.sa">
+                Email: info@thetake.sa
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="js/add-offering.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

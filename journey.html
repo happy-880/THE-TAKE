@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey | THE TAKE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="THE TAKE Logo" class="site-logo">
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="offerings.html">Offerings</a>
+                <a href="journey.html" class="active">Journey</a>
+                <a href="manager-dashboard.html">Manager</a>
+                <a href="member-dashboard.html">Member</a>
+                <a href="about.html">About Us</a>
+            </nav>
+
+            <a href="member-dashboard.html" class="profile-link">
+                <img src="images/profile.png" alt="Profile">
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>Journey</span>
+        </div>
+
+        <!-- Navigation between journey stages -->
+        <input type="radio" name="journey-stage" id="stage-idea"
+            class="stage-selector" checked>
+
+        <input type="radio" name="journey-stage" id="stage-script"
+            class="stage-selector">
+
+        <input type="radio" name="journey-stage" id="stage-shooting"
+            class="stage-selector">
+
+        <input type="radio" name="journey-stage" id="stage-editing"
+            class="stage-selector">
+
+        <input type="radio" name="journey-stage" id="stage-premiere"
+            class="stage-selector">
+
+        <!-- Hero Section -->
+        <section class="journey-hero">
+            <div class="hero-text">
+                <p class="hero-subtitle">THE JOURNEY</p>
+
+                <h1>Behind Every Film<br>Is a Journey</h1>
+
+                <p class="hero-description">
+                    Explore the step-by-step process of making a short film.
+                    <br>
+                   Click on each stage to learn more.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/Journey.png" alt="Film journey">
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <div class="timeline-container">
+
+            <div class="timeline-step idea-step">
+                <label for="stage-idea">
+                    <img src="images/idea.png" alt="Idea" class="timeline-icon">
+                    <span>1. Idea</span>
+                </label>
+            </div>
+
+            <div class="timeline-line"></div>
+
+            <div class="timeline-step script-step">
+                <label for="stage-script">
+                    <img src="images/script.png" alt="Script" class="timeline-icon">
+                    <span>2. Script</span>
+                </label>
+            </div>
+
+            <div class="timeline-line"></div>
+
+            <div class="timeline-step shooting-step">
+                <label for="stage-shooting">
+                    <img src="images/shooting.png" alt="Shooting" class="timeline-icon">
+                    <span>3. Shooting</span>
+                </label>
+            </div>
+
+            <div class="timeline-line"></div>
+
+            <div class="timeline-step editing-step">
+                <label for="stage-editing">
+                    <img src="images/edit.png" alt="Editing" class="timeline-icon">
+                    <span>4. Editing</span>
+                </label>
+            </div>
+
+            <div class="timeline-line"></div>
+
+            <div class="timeline-step premiere-step">
+                <label for="stage-premiere">
+                    <img src="images/premiere.png" alt="Premiere" class="timeline-icon">
+                    <span>5. Premiere</span>
+                </label>
+            </div>
+
+        </div>
+
+        <!-- Journey Stages -->
+        <div class="journey-stages">
+
+            <!-- Stage 1: Idea -->
+            <section class="stage-card journey-stage" id="idea">
+
+                <label for="stage-premiere" class="arrow-btn">‹</label>
+
+                <div class="stage-body">
+                    <div class="stage-info">
+                        <h2>1. Idea</h2>
+
+                        <p class="stage-intro">
+                            Every great film starts with an idea. This is where
+                            you choose a topic, explore your interests, and think
+                            about the message you want to share with your audience.
+                        </p>
+
+                        <div class="key-points">
+                            <h3>Key Points</h3>
+                            <ul>
+                                <li>Find inspiration from real life, issues, or stories.</li>
+                                <li>Think about your target audience.</li>
+                                <li>Keep your idea clear and simple.</li>
+                                <li>Discuss and get feedback from your team.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stage-media">
+                        <img src="images/ideaJourney.jpg" alt="Developing a film idea">
+                        <p class="media-caption">Every great film starts somewhere.</p>
+                    </div>
+                </div>
+
+                <label for="stage-script" class="arrow-btn">›</label>
+            </section>
+
+            <!-- Stage 2: Script -->
+            <section class="stage-card journey-stage" id="script">
+
+                <label for="stage-idea" class="arrow-btn">‹</label>
+
+                <div class="stage-body">
+                    <div class="stage-info">
+                        <h2>2. Script</h2>
+
+                        <p class="stage-intro">
+                            A script turns your idea into a clear story. It
+                            outlines the scenes, dialogue, and actions that
+                            will guide the film.
+                        </p>
+
+                        <div class="key-points">
+                            <h3>Key Points</h3>
+                            <ul>
+                                <li>Build the story structure.</li>
+                                <li>Write scenes and dialogue.</li>
+                                <li>Describe actions and settings.</li>
+                                <li>Review and refine the draft.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stage-media">
+                        <img src="images/scriptwriting.jpg" alt="Writing a film script">
+                        <p class="media-caption">Turning ideas into a story.</p>
+                    </div>
+                </div>
+
+                <label for="stage-shooting" class="arrow-btn">›</label>
+            </section>
+
+            <!-- Stage 3: Shooting -->
+            <section class="stage-card journey-stage" id="shooting">
+
+                <label for="stage-script" class="arrow-btn">‹</label>
+
+                <div class="stage-body">
+                    <div class="stage-info">
+                        <h2>3. Shooting</h2>
+
+                        <p class="stage-intro">
+                            Shooting brings the script to life by recording
+                            scenes with actors, cameras, and sound.
+                        </p>
+
+                        <div class="key-points">
+                            <h3>Key Points</h3>
+                            <ul>
+                                <li>Prepare the camera and equipment.</li>
+                                <li>Set up lighting and sound.</li>
+                                <li>Guide actors through each scene.</li>
+                                <li>Record multiple takes and review footage.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stage-media">
+                        <img src="images/directing.jpg" alt="Filming a scene">
+                        <p class="media-caption">Bringing the story to life.</p>
+                    </div>
+                </div>
+
+                <label for="stage-editing" class="arrow-btn">›</label>
+            </section>
+
+            <!-- Stage 4: Editing -->
+            <section class="stage-card journey-stage" id="editing">
+
+                <label for="stage-shooting" class="arrow-btn">‹</label>
+
+                <div class="stage-body">
+                    <div class="stage-info">
+                        <h2>4. Editing</h2>
+
+                        <p class="stage-intro">
+                            Editing brings the recorded footage together into
+                            a clear and engaging story. Choose the best takes,
+                            arrange scenes, and refine the film.
+                        </p>
+
+                        <div class="key-points">
+                            <h3>Key Points</h3>
+                            <ul>
+                                <li>Organize and review all footage.</li>
+                                <li>Select the best takes.</li>
+                                <li>Arrange scenes and transitions.</li>
+                                <li>Add music, sound, and color corrections.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stage-media">
+                        <img src="images/video-editing.jpg" alt="Editing film footage">
+                        <p class="media-caption">Shaping the final film.</p>
+                    </div>
+                </div>
+
+                <label for="stage-premiere" class="arrow-btn">›</label>
+            </section>
+
+            <!-- Stage 5: Premiere -->
+            <section class="stage-card journey-stage" id="premiere">
+
+                <label for="stage-editing" class="arrow-btn">‹</label>
+
+                <div class="stage-body">
+                    <div class="stage-info">
+                        <h2>5. Premiere</h2>
+
+                        <p class="stage-intro">
+                            Premiere is the final step where you share the
+                            completed film with an audience and celebrate
+                            the work behind it.
+                        </p>
+
+                        <div class="key-points">
+                            <h3>Key Points</h3>
+                            <ul>
+                                <li>Export the final film in the right format.</li>
+                                <li>Check sound, visuals, and credits.</li>
+                                <li>Prepare the screening or online release.</li>
+                                <li>Share the film and gather audience feedback.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="stage-media">
+                        <img src="images/FilmProductionOffering.jpg" alt="Film premiere">
+                        <p class="media-caption">The story reaches the audience.</p>
+                    </div>
+                </div>
+
+                <label for="stage-idea" class="arrow-btn">›</label>
+            </section>
+
+        </div>
+    </main>
+
+   <footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-social">
+            <div class="footer-heading">Social Media</div>
+            <a href="#">Instagram: @TheTake.sa</a>
+            <a href="#">X: @TheTake.sa</a>
+        </div>
+        <div class="footer-brand">
+            <img src="images/logo.jpg" alt="THE TAKE Logo">
+            <p>© 2026 THE TAKE. All rights reserved.</p>
+        </div>
+        <div class="footer-contact">
+            <div class="footer-heading">Contact Us</div>
+            <a href="tel:+966500000000">
+                Phone number: +966 50 000 0000
+            </a>
+            <a href="mailto:info@thetake.sa">
+                Email: info@thetake.sa
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="js/index.js"></script>
+<script src="js/journey.js"></script>
+
+</body>
+</html>

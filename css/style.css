@@ -1,0 +1,2035 @@
+/* =========================================
+     SHARED STYLES
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F0E6;
+    color: #5d3f2e;
+    line-height: 1.6;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+p {
+    color: #766A63;
+}
+/* =========================================
+    SHARED HEADER & NAVIGATION
+========================================= */
+.site-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5D8CD;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+}
+.site-logo {
+    width: 105px;
+    height: 65px;
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site-nav a {
+    margin: 0 16px;
+    color: #5d3f2e;
+    font-size: 17px;
+}
+.site-nav a:hover {
+    color: #A96F53;
+}
+
+/* Profile Image */
+.profile-link {
+    display: block;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    border: 2px solid #D9B39C;
+    border-radius: 50%;
+    background-color: #D9B39C;
+}
+.profile-link img {
+    width: 100%;
+    height: 100%;
+}
+/* =========================================
+     SHARED MAIN CONTENT & BREADCRUMB
+========================================= */
+main.container {
+    min-height: 500px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #766A63;
+    font-size: 14px;
+}
+.breadcrumb span,
+.breadcrumb a {
+    margin-right: 10px;
+}
+.breadcrumb a:hover {
+    color: #A96F53;
+}
+/* =========================================
+     SHARED FOOTER
+========================================= */
+.site-footer {
+    padding: 35px 0;
+    background-color: #5d3f2e;
+    color: #FFFFFF;
+}
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-social,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-social a,
+.footer-contact a {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.footer-social a:hover,
+.footer-contact a:hover {
+    color: #D9B39C;
+}
+.footer-brand {
+    text-align: center;
+}
+.footer-brand img {
+    width: 125px;
+    height: 80px;
+    margin: 0 auto 10px;
+}
+.footer-brand p {
+    color: #D9B39C;
+    font-size: 12px;
+}
+.footer-heading {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+        color: #D9B39C;
+
+}
+/* =========================================
+     SHARED BUTTONS
+========================================= */
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #A96F53;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+}
+.btn:hover {
+    background-color: #5d3f2e;
+}
+.btn-secondary {
+    background-color: #EFE4DA;
+    color: #5d3f2e;
+}
+.btn-secondary:hover {
+    background-color: #D9B39C;
+}
+
+
+
+/* =========================================
+     MANAGER PAGES "RAWAN"
+========================================= */
+.manager-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+.manager-sidebar {
+    width: 30%;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+    padding: 25px 18px;
+    margin-right: 30px;
+}
+.manager-sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.sidebar-link {
+    display: block;
+    padding: 13px 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #766A63;
+}
+.sidebar-link span {
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+}
+.sidebar-link:hover,
+.sidebar-link.active {
+    background-color: #F7F0E6;
+    color: #A96F53;
+}
+.manager-content {
+    flex: 1;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+    padding: 28px;
+}
+.manager-content h1 {
+    font-size: 28px;
+}
+.dashboard-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.dashboard-heading h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.dashboard-heading p {
+    color: #766A63;
+}
+
+/*  MANAGE INSTRUCTORS  */
+
+.table-wrap {
+    width: 100%;
+    overflow: auto;
+}
+.offerings-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.offerings-table th,
+.offerings-table td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #E5D8CD;
+}
+.offerings-table th {
+    background-color: #F7F0E6;
+    color: #5d3f2e;
+    font-size: 14px;
+}
+.offerings-table td {
+    font-size: 14px;
+}
+.offering-thumbnail {
+    width: 75px;
+    height: 60px;
+}
+.delete-actions {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.delete-actions .btn {
+    padding: 12px 22px;
+}
+.manager-content hr {
+    margin-bottom: 25px;
+}
+.manager-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+    padding: 25px 18px;
+    margin-right: 30px;
+}
+.offerings-table input {
+    width: 20px;
+    height: 20px;
+}
+.offerings-table .offering-thumbnail {
+    display: block;
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+    
+
+/*  ADD NEW OFFERING PAGE */
+
+.form-heading {
+    margin-bottom: 28px;
+}
+.form-heading h1,
+.form-heading h2{
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+.offering-form {
+    width: 100%;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+.form-group label {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #E5D8CD;
+    background-color: #FFFCF8;
+    color: #5d3f2e;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.form-group input,.form-group select,
+.form-group textarea {
+    resize: vertical;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.form-actions .btn {
+    margin-left: 12px;
+}
+/*RAWAN DONE */
+
+/* =========================================
+   MEMBER PAGES "JOURY"
+========================================= */
+
+/*MEMBER PAGE*/
+.member-page-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.requests-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.member-requests-table {
+    width: 100%;
+}
+.member-requests-table th,
+.member-requests-table td {
+    padding: 10px 8px;
+    font-size: 13px;
+    border: 1px solid #e5e2de;
+}
+
+.member-requests-table th {
+    background-color: #F7F0E6;
+    color: #5d3f2e;
+}
+.request-status {
+    padding: 2px 9px;
+    background-color: #EAEAEA;
+    color: #000000;
+    font-size: 12px;
+    border-radius: 8PX;
+    display: inline-block;
+}
+.request-status.pending {
+    background-color: #f6e6c6;
+}
+.request-status.completed {
+    background-color: #c5eec5;
+}
+.request-status.declined {
+    background-color: #F29a9c;
+}
+
+/* EVALUATION PAGE */
+/* EVALUATION PAGE */
+.evaluation-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.evaluation-heading h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.evaluation-heading p {
+    color: #766A63;
+}
+
+.evaluation-form {
+    width: 100%;
+}
+
+.evaluation-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.evaluation-form label {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.evaluation-form select,
+.evaluation-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #E5D8CD;
+    background-color: #FFFCF8;
+    color: #5d3f2e;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.rating-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.rating-group label {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+.rating-stars {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.rating-stars input {
+    display: none;
+}
+
+.rating-stars label {
+    color: #A96F53;
+    font-size: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.rating-stars label::before {
+    content: "☆";
+}
+
+.rating-stars label:hover::before,
+.rating-stars label:hover ~ label::before,
+.rating-stars input:checked ~ label::before {
+    content: "★";
+}
+
+
+.evaluation-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.evaluation-actions .btn {
+    margin-left: 12px;
+}
+
+.evaluation-actions .btn-submit {
+    background-color: #A96F53;
+}
+
+.evaluation-actions .btn-submit:hover {
+    background-color: #5d3f2e;
+}
+
+/*JOURY DONE */
+
+
+
+/* =========================================
+   JOURNEY PAGE "WAJD"
+========================================= */
+
+.site-nav a.active {
+    color: #A96F53;
+}
+
+/* HERO */
+.journey-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFE4DA;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.journey-hero .hero-text {
+    width: 45%;
+}
+
+.hero-subtitle {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.journey-hero .hero-text h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    font-size: 14px;
+}
+
+.journey-hero .hero-image {
+    width: 50%;
+    height: 220px;
+    border: 1px solid #5d3f2e;
+    overflow: hidden;
+}
+
+.journey-hero .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TIMELINE */
+.timeline-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.timeline-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-step label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.timeline-icon {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    padding: 8px;
+    background-color: #FFFFFF;
+    border: 3px solid #b79784;
+    border-radius: 50%;
+}
+
+.timeline-step label span {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.timeline-step:hover .timeline-icon {
+    border-color: #A96F53;
+}
+
+.timeline-line {
+    flex: 1;
+    height: 1px;
+    margin-top: 32px;
+    background-color: #766A63;
+}
+
+/* STAGE CARD */
+.stage-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+    padding: 20px 12px;
+}
+
+.arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    background-color: #EFE4DA;
+    color: #5d3f2e;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.arrow-btn:hover {
+    background-color: #D9B39C;
+}
+
+.stage-body {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.stage-info {
+    width: 55%;
+    margin-right: 20px;
+}
+
+.stage-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.stage-intro {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.key-points h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.key-points ul {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #766A63;
+}
+
+.stage-media {
+    width: 40%;
+    text-align: center;
+}
+
+.stage-media img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #5d3f2e;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+.media-caption {
+    font-size: 13px;
+}
+
+/* To navigate between the stages of the journey */
+.stage-selector {
+    display: none;
+}
+
+.journey-stage {
+    display: none;
+}
+
+/* Highlight the selected timeline image */
+.timeline-icon.active-icon {
+    background-color: #EFE4DA;
+    border-color: #5d3f2e;
+}
+
+
+/* =========================================
+   OFFERINGS PAGE "WAJD"
+========================================= */
+
+.page-title {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* SEARCH & SORT */
+.filter-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.search-box {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 15px;
+    margin-right: 20px;
+    border: 1px solid #5d3f2e;
+    border-radius: 13px;
+    background-color: #FFFFFF;
+}
+.search-icon {
+    font-size: 14px;
+    margin-right: 8px;
+}
+.search-box input {
+    flex: 1;
+    border: none;
+    background-color: #FFFFFF;
+    color: #5d3f2e;
+    font-size: 15px;
+}
+.sort-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sort-box label {
+    font-size: 16px;
+    color: #5d3f2e;
+    margin-right: 10px;
+}
+.sort-box select {
+    padding: 8px 14px;
+    margin-right: 10px;
+    border: 1px solid #D1C4B8;
+    background-color: #FFFFFF;
+    color: #5d3f2e;
+    font-size: 14px;
+    border-radius: 13px;
+}/* ----- Cards Grid (scrollable, 3 per row) ----- */
+
+
+.offerings-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 640px;
+    overflow: auto;
+    padding-right: 15px;
+}
+.offering-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+.card-image {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #5d3f2e;
+    overflow: hidden;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-content {
+    flex: 1;
+    padding: 10px 0;
+}
+.card-content h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.card-content p {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+/* REQUEST TO JOIN BUTTON */
+.join-btn {
+    display: block;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.join-btn:hover {
+    background-color: #5d3f2e;
+}
+
+/* WAJD DONE */
+
+
+
+
+
+/* =========================================
+   ABOUT US PAGE - LAMAR
+========================================= */
+
+/* ABOUT PAGE */
+.about-page {
+    min-width: 0;
+}
+
+.about-page h1 {
+    font-size: 28px;
+    margin: 0 0 15px;
+    color: #5d3f2e;
+}
+
+.about-page h2 {
+    font-size: 26px;
+    margin: 0 0 12px;
+    color: #5d3f2e;
+}
+
+.about-page p {
+    line-height: 1.7;
+}
+
+/* OUR MISSION */
+.about-page .mission-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+}
+
+.about-page .mission-content {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.about-page .mission-content p {
+    margin-bottom: 0;
+}
+
+.about-page .mission-image {
+    width: 280px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+/* OUR TEAM */
+.about-page .team-section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.about-page .team-title {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.about-page .section-intro {
+    margin-bottom: 24px;
+}
+
+.about-page .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: auto;
+    padding: 8px 4px 18px;
+}
+
+.about-page .team-card {
+    flex: 0 0 250px;
+    padding: 28px 18px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+}
+
+.about-page .team-photo {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background-color: #F7F0E6;
+}
+
+.about-page .team-card h3 {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.about-page .team-card h3 a {
+    text-decoration: underline;
+    color: #5d3f2e;
+}
+
+.about-page .team-card h3 a:hover {
+    color: #A96F53;
+}
+
+.about-page .team-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* JOIN OUR TEAM FORM */
+.about-page .join-team-section {
+    padding: 30px;
+    margin-bottom: 35px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+}
+
+.about-page .join-team-section h2 {
+    margin-bottom: 10px;
+}
+
+.about-page .join-team-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about-page .join-form-column {
+    flex: 1 1 300px;
+    margin-right: 20px;
+}
+
+.about-page .join-team-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.about-page .join-team-form label {
+    font-weight: bold;
+    margin-bottom: 7px;
+    font-size: 15px;
+    color: #5d3f2e;
+}
+
+.about-page .join-team-form input,
+.about-page .join-team-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E5D8CD;
+    border-radius: 6px;
+    background-color: #FFFCF8;
+    color: #5d3f2e;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.about-page .join-team-form input[type="file"] {
+    background-color: #FFFFFF;
+}
+
+.about-page .join-team-form textarea {
+    resize: vertical;
+}
+
+.about-page .join-team-form small {
+    display: block;
+    margin-top: 5px;
+    color: #766A63;
+    font-size: 12px;
+}
+
+.about-page .join-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* END ABOUT US PAGE */
+
+
+/* =========================================
+   INSTRUCTOR PROFILE PAGE - LAMAR
+========================================= */
+
+/* MAIN SECTION */
+.instructor-profile-page {
+    min-width: 0;
+}
+
+.instructor-profile-section {
+    margin: 20px 0 40px;
+}
+
+.instructor-page-title {
+    margin-bottom: 10px;
+    color: #5d3f2e;
+    font-size: 28px;
+}
+
+.instructor-page-description {
+    margin-bottom: 25px;
+    color: #766A63;
+    line-height: 1.7;
+}
+
+/* TABLE WRAPPER */
+.profile-table-wrap {
+    width: 100%;
+    overflow: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+}
+
+/* INSTRUCTOR INFORMATION TABLE */
+.instructor-profile-table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: #FFFFFF;
+    color: #5d3f2e;
+}
+
+/* TABLE CAPTION */
+.instructor-profile-table caption {
+    padding: 15px;
+    color: #5d3f2e;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* TABLE CELLS */
+.instructor-profile-table th,
+.instructor-profile-table td {
+    border: 1px solid #E5D8CD;
+    padding: 16px;
+    vertical-align: middle;
+}
+
+/* INSTRUCTOR NAME */
+.instructor-profile-table .profile-name-cell {
+    padding: 24px 16px;
+    text-align: center;
+    background-color: #F3ECE5;
+    color: #5d3f2e;
+}
+
+.profile-name-cell span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-name-cell strong {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* FIELD LABELS */
+.instructor-profile-table .profile-field-label {
+    width: 14%;
+    background-color: #F7F0E6;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* FIELD VALUES */
+.instructor-profile-table .profile-field-value {
+    background-color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* PHOTO CELL */
+.instructor-profile-table .profile-photo-cell {
+    width: 24%;
+    text-align: center;
+    background-color: #FFFCF8;
+}
+
+.profile-photo-cell img {
+    width: 100%;
+    max-width: 190px;
+    height: 190px;
+    margin: 0 auto 12px;
+    border-radius: 8px;
+    background-color: #F7F0E6;
+}
+
+.profile-photo-cell p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* EDUCATION CELL */
+.instructor-profile-table .profile-education-cell {
+    padding: 22px;
+    background-color: #FFFFFF;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.profile-education-cell h2 {
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #F7F0E6;
+    color: #5d3f2e;
+    font-size: 20px;
+}
+
+.profile-education-cell p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* BACK TO ABOUT US */
+.profile-back-link {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+.profile-back-link .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid #A96F53;
+    border-radius: 6px;
+    background-color: #A96F53;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.profile-back-link .btn:hover {
+    background-color: #5d3f2e;
+    border-color: #5d3f2e;
+}
+
+/* END INSTRUCTOR PROFILE PAGE */
+
+
+
+/*=========================================
+     ALJAWHARAH PAGES
+========================================= */
+
+/*SHARED*/
+
+.hero, .feature-offering,.journey,.reviews {
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* Hero Section */
+
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 45%;
+}
+
+.hero-label {
+    display: block;
+    color: #A96F53;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.hero-image {
+    width: 50%;
+    border-radius: 12px;
+}
+
+
+/* Feature Offering Section */
+.offering-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.offering-header h2 {
+    font-size: 26px;
+}
+
+.view-offerings {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #A96F53;
+    font-size: 15px;
+}
+
+.offering-extra {
+    display: none;
+    padding: 0 16px 16px;
+    font-size: 13px;
+    color: #766A63;
+}
+.offering-item:hover {
+    border-color: #A96F53;
+}
+.offering-item:hover .offering-extra {
+    display: block;
+}
+
+
+.offering-content ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.offering-content li {
+    flex: 1 1 260px;
+}
+ 
+.offering-item {
+    height: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.offering-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+    
+.offering-item h3 {
+    font-size: 18px;
+    padding: 16px 16px 4px;
+}
+    
+.offering-item p {
+    padding: 0 16px;
+    font-size: 14px;
+}
+.price {
+    display: block;
+    padding: 8px 16px 16px;
+    font-weight: bold;
+    color: #A96F53;
+}
+
+
+
+/*journey*/
+
+.journey-content h2 {
+    font-size: 26px;
+}
+
+.journey-content h3 {
+    font-size: 16px;
+    color: #766760;
+    margin-bottom: 30px;
+}
+
+
+.journey-steps {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+
+.journey-steps::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background-color: #b79784;
+}
+
+.step {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.step-c {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #b79784;
+    background-color: #FFFFFF;
+}
+.step-icon {
+    width: 55%;
+    height: 55%;
+    object-fit: contain;
+}
+.step-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.journey-btn {
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+/*reviews*/
+.reviews-header h2 {
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.review-item {
+    flex: 1 1 280px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #F7F0E6;
+    border: 1px solid #E5D8CD;
+    border-radius: 12px;
+    padding: 18px;
+}
+.member-photo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.rating {
+    display: block;
+    color: #A96F53;
+    letter-spacing: 2px;
+}
+.course-name {
+    display: block;
+    font-size: 12px;
+    color: #766A63;
+}
+.review-text {
+    color: #5d3f2e;
+    font-weight: bold;
+}
+/* =========================================
+     RESPONSIVE DESIGN
+========================================= */
+@media screen and (max-width: 768px) {
+
+    /* ----- Header & Navigation ----- */
+    .header-inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 12px 0;
+    }
+
+    .site-nav {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .site-nav a {
+        margin: 4px 10px;
+        font-size: 15px;
+    }
+
+    /* ----- Footer ----- */
+    .footer-inner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* ----- Home: Sections ----- */
+    .hero,
+    .feature-offering,
+    .journey,
+    .reviews {
+        padding: 20px;
+    }
+
+    /* ----- Home: Hero ----- */
+    .hero-inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    /* ----- Home: Featured Offerings ----- */
+    .offering-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .offering-content li {
+        flex: 1 1 100%;
+    }
+
+    /* ----- Home: Journey (Extra Section) ----- */
+    .journey-steps::before {
+        display: none;
+    }
+
+    .step {
+        flex: 1 1 40%;
+    }
+
+    /* ----- Home: Reviews ----- */
+    .review-item {
+        flex: 1 1 100%;
+    }
+
+    /* ----- Manager & Member Pages ----- */
+    .manager-layout {
+        flex-direction: column;
+    }
+
+    .manager-sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .manager-content {
+        width: 100%;
+    }
+
+    .dashboard-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .table-wrap {
+        width: 100%;
+        overflow: auto;
+    }
+
+    /* ----- Journey Page ----- */
+    .journey-hero {
+        flex-direction: column;
+    }
+
+    .journey-hero .hero-text,
+    .journey-hero .hero-image {
+        width: 100%;
+    }
+
+    .stage-card,
+    .stage-body {
+        flex-direction: column;
+    }
+
+    .stage-info,
+    .stage-media {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* ----- Offerings Page ----- */
+    .filter-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .search-box {
+        margin-right: 0;
+    }
+
+    .offering-card {
+        width: 100%;
+    }
+
+    /* ----- About Page ----- */
+    .about-page .mission-section {
+        flex-direction: column;
+    }
+
+    .about-page .mission-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/* =========================================
+   THE TAKE - WARM MOCHA DARK THEME
+   ========================================= */
+
+
+/* Main page background and default text color */
+
+body.dark-theme {
+    background-color: #302722 !important;
+    color: #F7F0E6;
+}
+
+body.dark-theme main {
+    background-color: #302722 !important;
+}
+
+
+/* Header background, navigation links, and active page link */
+
+body.dark-theme .site-header {
+    background-color: #493930 !important;
+    border-bottom: 1px solid #A96F53;
+}
+
+body.dark-theme .site-nav a {
+    color: #F7F0E6;
+}
+
+body.dark-theme .site-nav a.active {
+    color: #D9B39C;
+}
+
+
+/* Theme toggle button appearance in light and dark modes */
+
+#theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 16px;
+    border: 1px solid #A96F53;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #5D3F2E;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background-color: #EFE4DA;
+}
+
+body.dark-theme #theme-toggle {
+    background-color: #493930;
+    color: #F7F0E6;
+    border-color: #A96F53;
+}
+
+body.dark-theme #theme-toggle:hover {
+    background-color: #5D4639;
+}
+
+
+/* Main sections background and border styling */
+
+body.dark-theme .hero,
+body.dark-theme .feature-offering,
+body.dark-theme .journey,
+body.dark-theme .reviews,
+body.dark-theme .mission-section,
+body.dark-theme .join-team-section,
+body.dark-theme .journey-hero {
+    background-color: #493930 !important;
+    border: 1px solid #A96F53;
+    color: #F7F0E6;
+}
+
+
+/* Cards background and border styling */
+
+body.dark-theme .offering-item,
+body.dark-theme .team-card,
+body.dark-theme .review-item,
+body.dark-theme .offering-card,
+body.dark-theme .stage-card {
+    background-color: #302722 !important;
+    border: 1px solid #A96F53;
+    color: #F7F0E6;
+}
+
+
+/* General headings, paragraphs, labels, and table text */
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme p,
+body.dark-theme label,
+body.dark-theme td,
+body.dark-theme th {
+    color: #F7F0E6;
+}
+
+
+/* Secondary text such as prices and section descriptions */
+
+body.dark-theme .hero-label,
+body.dark-theme .section-intro,
+body.dark-theme .view-offerings,
+body.dark-theme .price,
+body.dark-theme .course-name {
+    color: #D9B39C;
+}
+
+
+/* About Us page: mission, team, and Join Our Team text */
+
+body.dark-theme .mission-section h1,
+body.dark-theme .mission-section h2,
+body.dark-theme .mission-section p,
+body.dark-theme .team-section h2,
+body.dark-theme .team-section p,
+body.dark-theme .team-card h3,
+body.dark-theme .team-card p,
+body.dark-theme .join-team-section h2,
+body.dark-theme .join-team-section p,
+body.dark-theme .join-team-section label {
+    color: #F7F0E6 !important;
+}
+
+
+/* Join Our Team form background, labels, and input fields */
+
+body.dark-theme .join-team-section form {
+    background-color: #493930;
+    color: #F7F0E6;
+}
+
+body.dark-theme .join-team-section form label {
+    color: #F7F0E6 !important;
+}
+
+body.dark-theme .join-team-section form input,
+body.dark-theme .join-team-section form textarea,
+body.dark-theme .join-team-section form select {
+    background-color: #302722 !important;
+    color: #F7F0E6 !important;
+    border: 1px solid #A96F53;
+}
+
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder {
+    color: #D9B39C;
+}
+
+body.dark-theme input[type="file"] {
+    background-color: #493930;
+    color: #F7F0E6;
+}
+
+
+/* Journey page: stage cards and their text */
+
+body.dark-theme .stage-info h2,
+body.dark-theme .stage-info h3,
+body.dark-theme .stage-info p,
+body.dark-theme .stage-info li,
+body.dark-theme .hero-text h1,
+body.dark-theme .hero-description,
+body.dark-theme .hero-subtitle,
+body.dark-theme .key-points ul {
+    color: #F7F0E6 !important;
+}
+
+
+/* Journey timeline background and connecting line */
+
+body.dark-theme .timeline-container {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+body.dark-theme .timeline-line {
+    height: 1px !important;
+    background-color: #D9B39C !important;
+    border: none !important;
+}
+
+
+/* Timeline icons in their normal state */
+
+body.dark-theme .timeline-icon {
+    background-color: #F7F0E6 !important;
+    border: 3px solid #B79784 !important;
+    border-radius: 50%;
+}
+
+/* Timeline icon for the currently selected stage (the class is added by js/journey.js) */
+
+body.dark-theme .timeline-icon.active-icon {
+    background-color: #D9B39C !important;
+    border-color: #302722 !important;
+}
+
+
+/* Timeline labels and hover effect */
+
+body.dark-theme .timeline-step label span {
+    color: #F7F0E6 !important;
+}
+
+body.dark-theme .timeline-step:hover .timeline-icon {
+    border-color: #A96F53 !important;
+}
+
+/* Journey navigation arrows */
+
+body.dark-theme .arrow-btn {
+    background-color: #A96F53 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 6px;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body.dark-theme .arrow-btn:hover {
+    background-color: #D9B39C !important;
+    color: #302722 !important;
+}
+
+
+/* Manager and Member dashboard backgrounds */
+
+body.dark-theme .manager-sidebar,
+body.dark-theme .manager-content,
+body.dark-theme .member-sidebar,
+body.dark-theme .member-content {
+    background-color: #493930 !important;
+    border: 1px solid #A96F53;
+    color: #F7F0E6;
+}
+
+
+/* Dashboard headings and sidebar links */
+
+body.dark-theme .manager-sidebar h2,
+body.dark-theme .manager-content h1,
+body.dark-theme .manager-content h2,
+body.dark-theme .dashboard-heading p,
+body.dark-theme .requests-title {
+    color: #F7F0E6 !important;
+}
+
+body.dark-theme .sidebar-link {
+    color: #D9B39C;
+}
+
+body.dark-theme .sidebar-link.active,
+body.dark-theme .sidebar-link:hover {
+    background-color: #D9B39C !important;
+    color: #302722 !important;
+}
+
+
+/* Dashboard tables: headings, cells, and borders */
+
+body.dark-theme .offerings-table th,
+body.dark-theme .member-requests-table th {
+    background-color: #302722 !important;
+    color: #F7F0E6 !important;
+}
+
+body.dark-theme .offerings-table td,
+body.dark-theme .member-requests-table td {
+    background-color: #493930 !important;
+    color: #F7F0E6 !important;
+    border-color: #A96F53 !important;
+}
+
+body.dark-theme .table-wrap {
+    border-color: #A96F53;
+}
+
+
+/* Instructor profile page background and page title */
+
+body.dark-theme .instructor-profile-page {
+    background-color: #302722 !important;
+    color: #F7F0E6 !important;
+}
+
+body.dark-theme .instructor-profile-section {
+    background-color: transparent !important;
+    color: #F7F0E6 !important;
+}
+
+body.dark-theme .instructor-page-title {
+    color: #F7F0E6 !important;
+}
+
+
+/* Instructor profile table background and borders */
+
+body.dark-theme .profile-table-wrap {
+    background-color: #493930 !important;
+    border: 1px solid #A96F53 !important;
+    border-radius: 12px;
+}
+
+body.dark-theme .instructor-profile-table,
+body.dark-theme .instructor-profile-table th,
+body.dark-theme .instructor-profile-table td {
+    background-color: #493930 !important;
+    color: #F7F0E6 !important;
+    border-color: #A96F53 !important;
+}
+
+
+/* Instructor name and profile name cell */
+
+body.dark-theme .profile-name-cell {
+    background-color: #5D4639 !important;
+    color: #F7F0E6 !important;
+}
+
+body.dark-theme .profile-name,
+body.dark-theme .profile-name-cell a,
+body.dark-theme .profile-name-cell a:link,
+body.dark-theme .profile-name-cell a:visited,
+body.dark-theme .profile-name-cell a:active {
+    color: #F7F0E6 !important;
+    opacity: 1 !important;
+}
+
+
+/* Instructor profile field labels and values */
+
+body.dark-theme .profile-field-label {
+    background-color: #493930 !important;
+    color: #D9B39C !important;
+}
+
+body.dark-theme .profile-field-value {
+    background-color: #44352D !important;
+    color: #F7F0E6 !important;
+}
+
+
+/* Instructor profile photo area and image border */
+
+body.dark-theme .profile-photo-cell {
+    background-color: #493930 !important;
+}
+
+body.dark-theme .profile-photo-cell img {
+    border-color: #A96F53;
+}
+
+
+/* Instructor profile back button */
+
+body.dark-theme .profile-back-link a {
+    background-color: #A96F53;
+    color: #FFFFFF;
+    border: 1px solid #D9B39C;
+}
+
+
+/* All input fields, text areas, and select menus */
+
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+    background-color: #302722;
+    color: #F7F0E6;
+    border: 1px solid #A96F53;
+}
+
+body.dark-theme option {
+    background-color: #493930;
+    color: #F7F0E6;
+}
+
+
+/* General buttons */
+
+body.dark-theme .btn,
+body.dark-theme .btn-submit,
+body.dark-theme .join-btn {
+    background-color: #A96F53;
+    color: #FFFFFF;
+    border: 1px solid #D9B39C;
+}
+
+
+/* Footer background, text, and top border */
+
+body.dark-theme .site-footer {
+    background-color: #241D19;
+    color: #F7F0E6;
+    border-top: 1px solid #A96F53;
+}
+
+body.dark-theme .site-footer p,
+body.dark-theme .site-footer a {
+    color: #D9B39C;
+}
+/* =========================================
+     start update after doing js
+========================================= */
+/* =========================================
+     BACK TO TOP & CLOCK (HOME)
+========================================= */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #A96F53;
+    color: #FFFFFF;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.back-to-top:hover {
+    background-color: #5d3f2e;
+}
+
+.footer-clock {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+/* NEW REQUESTS (REQUEST TO JOIN) */
+.new-requests {
+    margin-top: 30px;
+}
+
+/* HIGHLIGHT UNFILLED INPUTS (EVALUATION) */
+.evaluation-form .input-error {
+    border: 2px solid #D9534F;
+    border-radius: 6px;
+    background-color: #FDECEA;
+}
+
+.rating-stars.input-error {
+    padding: 2px 6px;
+}
+
+/* NO SEARCH RESULTS (OFFERINGS) */
+.no-results {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Instructors | THE TAKE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="THE TAKE Logo" class="site-logo">
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="offerings.html">Offerings</a>
+                <a href="journey.html">Journey</a>
+                <a href="manager-dashboard.html" class="active">Manager</a>
+                <a href="member-dashboard.html">Member</a>
+                <a href="about.html">About Us</a>
+            </nav>
+
+            <a href="member-dashboard.html" class="profile-link">
+                <img src="images/profile.png" alt="Profile">
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <a href="manager-dashboard.html">Manager</a>
+            <span>›</span>
+            <span>Manage Instructors</span>
+        </div>
+
+        <div class="manager-layout">
+
+            <aside class="manager-sidebar">
+                <h2>Manager Dashboard</h2>
+
+                <a href="manager-dashboard.html" class="sidebar-link">
+                    <span>▦</span> Manage Offerings
+                </a>
+
+               
+
+                <a href="manage-instructors.html" class="sidebar-link active">
+                    <span>♙</span> Manage Instructors
+                </a>
+            </aside>
+
+            <section class="manager-content">
+
+                <div class="dashboard-heading">
+                    <div>
+                        <h1>Manage Activity Leaders &amp; Instructors</h1>
+                        <p>View and manage all activity leaders and instructors. Select one or more members to delete.</p>
+                    </div>
+                </div>
+
+                <!-- SECTION 1: DELETE INSTRUCTORS -->
+                <form action="#" method="post" id="delete-form">
+
+                    <div class="table-wrap">
+                        <table class="offerings-table instructors-table">
+                            <thead>
+                                <tr>
+                                    <th>Select</th>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Area of Expertise</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+
+                            <!-- Rows are added by js/manage-instructors.js -->
+                            <tbody id="instructors-body"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="delete-actions">
+                        <button type="submit" class="btn">Delete Selected</button>
+                    </div>
+
+                </form>
+
+                <hr>
+
+                <!-- SECTION 2: ADD A NEW INSTRUCTOR -->
+                <div class="form-heading">
+                    <h2>Add New Activity Leader / Instructor</h2>
+                    <p>Enter the information below to add a new activity leader or instructor.</p>
+                </div>
+
+                <form action="#" method="post" enctype="multipart/form-data" class="offering-form" id="instructor-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="instructor-name">Name</label>
+                        <input type="text" id="instructor-name" name="name" placeholder="Enter full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instructor-photo">Photo</label>
+                        <input type="file" id="instructor-photo" name="photo" accept="image/*">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instructor-birth">Date of Birth</label>
+                        <input type="date" id="instructor-birth" name="birth">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instructor-email">Email</label>
+                        <input type="email" id="instructor-email" name="email" placeholder="Enter email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instructor-expertise">Area of Expertise</label>
+                        <input type="text" id="instructor-expertise" name="expertise" placeholder="e.g. Directing, Acting, Editing">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instructor-skills">Skills</label>
+                        <textarea id="instructor-skills" name="skills" rows="3" placeholder="Enter relevant skills"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instructor-education">Education</label>
+                        <textarea id="instructor-education" name="education" rows="3" placeholder="Enter educational background"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Add Instructor</button>
+                    </div>
+
+                </form>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-social">
+                <div class="footer-heading">Social Media</div>
+                <a href="#">Instagram: @TheTake.sa</a>
+                <a href="#">X: @TheTake.sa</a>
+            </div>
+            <div class="footer-brand">
+                <img src="images/logo.jpg" alt="THE TAKE Logo">
+                <p>© 2026 THE TAKE. All rights reserved.</p>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-heading">Contact Us</div>
+                <a href="tel:+966500000000">
+                    Phone number: +966 50 000 0000
+                </a>
+                <a href="mailto:info@thetake.sa">
+                    Email: info@thetake.sa
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/manage-instructors.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

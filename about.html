@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | THE TAKE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- SHARED HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html">
+                <img src="images/logo.jpg"
+                     alt="THE TAKE Logo"
+                     class="site-logo">
+            </a>
+            
+
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="offerings.html">Offerings</a>
+                <a href="journey.html">Journey</a>
+                <a href="manager-dashboard.html">Manager</a>
+                <a href="member-dashboard.html">Member</a>
+                <a href="about.html" class="active" aria-current="page">About Us</a>
+            </nav>
+
+            <a href="member-dashboard.html" class="profile-link">
+                <img src="images/profile.png" alt="Profile">
+            </a>
+        </div>
+    </header>
+
+    <!-- ABOUT US PAGE: LAMAR -->
+    <main class="container about-page">
+
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>About Us</span>
+        </div>
+
+        <!-- OUR MISSION -->
+        <section class="mission-section">
+            <div class="mission-content">
+                <h1>About Us</h1>
+                <h2>Our Mission</h2>
+
+                <p>
+                    At THE TAKE, our mission is to bring stories to life
+                    by empowering aspiring filmmakers to explore their
+                    creativity, master their craft, and turn their ideas
+                    into meaningful cinematic experiences.
+                </p>
+            </div>
+
+            <img
+                src="images/AboutUs.png"
+                alt="A filmmaking and video editing workspace"
+                class="mission-image">
+        </section>
+
+        <!-- OUR TEAM: LAMAR -->
+        <section class="team-section">
+
+            <h2 class="team-title">Our Team</h2>
+
+            <p class="section-intro">
+                Meet our activity leaders and instructors who bring
+                passion and experience to our club.
+            </p>
+
+            <div class="team-list">
+
+                <!-- TEAM MEMBER 1 -->
+                <article class="team-card">
+                    <img
+                        src="images/OurTeam1.png"
+                        alt="Activity leader operating a video camera"
+                        class="team-photo">
+
+                    <h3>
+                        <a href="omar-profile.html">
+                            Omar Alharbi
+                        </a>
+                    </h3>
+
+                    <p>Film Director / Instructor</p>
+                </article>
+
+                <!-- TEAM MEMBER 2 -->
+                <article class="team-card">
+                    <img
+                        src="images/OurTeam2.png"
+                        alt="Cinematography instructor using a camera"
+                        class="team-photo">
+
+                    <h3>
+                        <a href="layan-profile.html">
+                            Layan Alqahtani
+                        </a>
+                    </h3>
+
+                    <p>Cinematography Instructor</p>
+                </article>
+
+                <!-- TEAM MEMBER 3 -->
+                <article class="team-card">
+                    <img
+                        src="images/OurTeam3.png"
+                        alt="Video editing instructor working at a computer"
+                        class="team-photo">
+
+                    <h3>
+                        <a href="faisal-profile.html">
+                            Faisal Alothman
+                        </a>
+                    </h3>
+
+                    <p>Editing Instructor</p>
+                </article>
+
+                <!-- TEAM MEMBER 4 -->
+                <article class="team-card">
+                    <img
+                        src="images/OurTeam4.png"
+                        alt="Screenwriting instructor"
+                        class="team-photo">
+
+                    <h3>
+                        <a href="noura-profile.html">
+                            Noura Alshammari
+                        </a>
+                    </h3>
+
+                    <p>Screenwriting Instructor</p>
+                </article>
+
+                <!-- TEAM MEMBER 5 -->
+                <article class="team-card">
+                    <img
+                        src="images/OurTeam5.png"
+                        alt="Film production activity leader"
+                        class="team-photo">
+
+                    <h3>
+                        <a href="khalid-profile.html">
+                            Khalid Almutairi
+                        </a>
+                    </h3>
+
+                    <p>Film Production Leader</p>
+                </article>
+
+            </div>
+
+        </section>
+        <!-- END LAMAR: OUR TEAM -->
+
+        <!-- JOIN OUR TEAM FORM: LAMAR -->
+        <section class="join-team-section">
+
+            <h2>Join Our Team</h2>
+
+            <p class="section-intro">
+                We are always looking for passionate individuals to
+                join our club. Fill out the form below to apply.
+            </p>
+
+            <form
+                action="#"
+                method="post"
+                enctype="multipart/form-data"
+                class="join-team-form"
+                id="join-team-form">
+
+                <div class="join-form-column">
+
+                    <div class="form-group">
+                        <label for="applicant-name">Name</label>
+                        <input
+                            type="text"
+                            id="applicant-name"
+                            name="name"
+                            placeholder="Full Name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicant-photo">Photo</label>
+                        <input
+                            type="file"
+                            id="applicant-photo"
+                            name="photo"
+                            accept="image/*"
+                            required>
+
+                        <small>Upload a clear photo of yourself.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicant-dob">Date of Birth</label>
+                        <input
+                            type="date"
+                            id="applicant-dob"
+                            name="date-of-birth"
+                            max="2008-12-31"
+                            required>
+                            
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicant-email">Email</label>
+                        <input
+                            type="email"
+                            id="applicant-email"
+                            name="email"
+                            placeholder="Email Address"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="join-form-column">
+
+                    <div class="form-group">
+                        <label for="applicant-expertise">
+                            Area of Expertise
+                        </label>
+
+                        <input
+                            type="text"
+                            id="applicant-expertise"
+                            name="area-of-expertise"
+                            placeholder="e.g. Directing, Editing, Acting"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicant-skills">Skills</label>
+
+                        <textarea
+                            id="applicant-skills"
+                            name="skills"
+                            rows="3"
+                            placeholder="Enter your skills"
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicant-education">Education</label>
+
+                        <textarea
+                            id="applicant-education"
+                            name="education"
+                            rows="3"
+                            placeholder="Enter your education details"
+                            required></textarea>
+                    </div>
+
+                </div>
+
+                <div class="join-form-actions">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+
+            </form>
+        </section>
+        <!-- END LAMAR: JOIN OUR TEAM FORM -->
+
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-social">
+            <div class="footer-heading">Social Media</div>
+            <a href="#">Instagram: @TheTake.sa</a>
+            <a href="#">X: @TheTake.sa</a>
+        </div>
+        <div class="footer-brand">
+            <img src="images/logo.jpg" alt="THE TAKE Logo">
+            <p>© 2026 THE TAKE. All rights reserved.</p>
+        </div>
+        <div class="footer-contact">
+            <div class="footer-heading">Contact Us</div>
+            <a href="tel:+966500000000">
+                Phone number: +966 50 000 0000
+            </a>
+            <a href="mailto:info@thetake.sa">
+                Email: info@thetake.sa
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/about.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
